@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,107 +16,54 @@
     <script defer src="./javascript/index.js"></script>
     <title>TENTREE - HOME</title>
 </head>
-<body class="d-flex flex-column min-vh-100">
-<div class="root-wrapper">
-    <div class="root_v1">
-        <nav class="teal darken-2">
-            <div class="nav-wrapper">
-                <a href="index.html" class="left flex-center">
-                    <img src="./assets/images/logo.png" class="nav-logo"/>
-                </a>
-                <a href="index.html" class="brand-logo">Tentree</a>
-                <a href="index.html" data-target="mobile-demo" class="sidenav-trigger">
-		<i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </div>
-        </nav>
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-        <div class="content-wrapper container">
-            <section class="loginWrapper">
-  
-                <ul class="tabs">
-                    <li class="active">Login</li>
-                    <li>Register</li>
-                </ul>
-            
-                <ul class="tab__content">
-                
-                    <li class="active">
-                        <div class="content__wrapper">
-                            <form method="POST" action="">
-                                <div class="form-container">
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <input placeholder="Enter Username" id="email" type="text" class="validate">
-                                        <label for="email">Email</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <input placeholder="Enter Password" id="password" type="password" class="validate">
-                                        <label for="password">Password</label>
-                                    </div>
-                                </div>
-                            </div>
-                                <a class="waves-effect waves-light btn-large" style="width: 100%">SUBMIT</a>
-                            </form>
+<body>
+            <div class="hero">
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button class="toggle-btn" type="buttn" onclick="login()">Log In</button>
+                        <button class="toggle-btn" type="buttn" onclick="register()">Register</button>
                         </div>
-                    </li>
-               
-                    <li>
-                        <div class="content__wrapper">
-                            <form method="POST" action="">
-                                <div class="form-container">
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <input placeholder="Enter Email" id="email" type="text" class="validate">
-                                        <label for="email">Email</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <input placeholder="Enter Username" id="username" type="text" class="validate">
-                                        <label for="username">Username</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <input placeholder="Enter Password" id="password" type="password" class="validate">
-                                        <label for="password">Password</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <input placeholder="Enter Password" id="password" type="password" class="validate">
-                                        <label for="password">Password</label>
-                                    </div>
-                                </div>
-                            </div>
-                                <a class="waves-effect waves-light btn-large" style="width: 100%">SUBMIT</a>
-                            </form>
+                        <div class="social-icons">
+                            <img src="fb.png">
+                            <img src="fb.png">
+                            <img src="fb.png">
                         </div>
-                    </li>
-              
-                </ul>
-            
-            </section>
+                        <form id="login" class="input-group">
+                            <input type="text" class="input-field" placeholder="User Id" required>
+                            <input type="password" class="input-field" placeholder="Enter the Password" required>
+                            <input type="checkbox" class="check-box"><span>Remember Password</span>
+                            <button type="submit" class="submit-btn">Log In</button>
+                        </form>
+                        <form id="login" class="input-group">
+                            <input type="email" class="input-field" placeholder="Email Id" required>
+                            <input type="password" class="input-field" placeholder="Enter the Password" required>
+                            <input type="checkbox" class="check-box"><span>I Agree to Terms and Conditon</span>
+                            <button type="submit" class="submit-btn">Register</button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div> 
         </div>
     </div>
-        <div class="footer grey darken-3 white-text logginFormFooter">
-            <div>© 2021 Tentree, All rights reserved.</div>
-        </div>
-    </div>
-
 </div>
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+
+    function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+</script>
 </body>
 </html>
