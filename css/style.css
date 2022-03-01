@@ -25,6 +25,11 @@ a {
     background-color: #f3f3f3;
 }
 
+.root_v1 {
+    justify-content: center;
+    text-align: center;
+}
+
 
 .product-card {
     border-radius: 8px;
@@ -212,7 +217,8 @@ nav {
     .loginWrapper {
         display: block;
         position: relative;
-        width: 350px;
+        width: 450px;
+        min-width: 300px;
         text-align: center;	
         margin: auto;
         right: 0;
@@ -225,11 +231,11 @@ nav {
     
     .logginFormFooter {
         text-align: center;
-        color: #777;
+        color: rgb(0, 0, 0);
         width: 100%;
         font-size: 12px;
         position: fixed;
-        bottom: 10px;
+        bottom: 0px;
     }
     
         .logginFormFooter a       {color: #777; font-weight: 600;}
@@ -259,7 +265,7 @@ nav {
       position: relative;
       overflow: hidden;
       cursor: pointer;
-      color: #666;
+      color: rgb(0, 0, 0);
       background-color: none;
     
     }
@@ -269,7 +275,7 @@ nav {
       content: "";
       width: 100%;
       height: 120%;
-      color: #FFF;  
+      color: rgb(0, 0, 0);  
       top: 0;
       left: 0;
          background-color: #DDD;
@@ -284,11 +290,11 @@ nav {
       transform: translateY(70%);
     }
     .tabs > li.active {
-      color: #FFF;
+      color: rgb(0, 0, 0);
     }
     .tabs > li.active:before {
       transition-duration: .5s;
-         background-color: #444;
+         background-color: rgb(255, 255, 255);
       -webkit-transform: translateY(0);
       transform: translateY(0);
     }
@@ -298,7 +304,7 @@ nav {
       position: relative;
       width: 100%;
       border-radius: 5px 5px 0px 0px;
-         background-color: #444;
+         background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 0px 12px 34px -8px rgba(0,0,0,0.28);
     -moz-box-shadow: 0px 12px 34px -8px rgba(0,0,0,0.28);
     box-shadow: 0px 12px 34px -8px rgba(0,0,0,0.28);
@@ -311,7 +317,7 @@ nav {
       color: #FFF;
       top: 0;
       left: 0;
-      background-color: #444;
+      background-color: rgb(255, 255, 255);
       display: none;
       list-style: none;
     }
@@ -319,7 +325,7 @@ nav {
       text-align: center;
       border-radius: 5px;
       padding-top: 24px;
-      background-color: #444;
+      background-color: rgb(255, 255, 255);
     }
     
     
@@ -356,6 +362,13 @@ nav {
         :-moz-placeholder           {color: #DDD;}
         ::-moz-placeholder          {color: #DDD;}
         :-ms-input-placeholder      {color: #DDD;}
+
+        .form_container{
+           width: 300px;
+           padding-left: 20px;
+           align-items: center;
+           text-align: center;
+        }
     
 }
 
