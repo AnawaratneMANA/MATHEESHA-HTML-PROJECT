@@ -16,12 +16,10 @@ a {
 }
 
 .root-wrapper {
-    display: flex;
     justify-content: center;
 }
 
 .root {
-    min-width: 100vw;
     justify-content: center;
     text-align: center;
     background-color: #f3f3f3;
@@ -188,7 +186,7 @@ nav {
 
     .landing-image{
         margin: 20px 20px 0 20px;
-	height: 65vh;
+	    height: 65vh;
     }
 
     .grid {
@@ -199,13 +197,6 @@ nav {
 
     .brand-logo {
         margin-left: 5px;
-    }
-
-    .root {
-        max-width: 1000px;
-    !important;
-        min-width: 1000px;
-    !important;
     }
 
     .card-image {
