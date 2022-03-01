@@ -1,0 +1,216 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.secondary-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.root-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.root {
+    min-width: 100vw;
+    justify-content: center;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+
+.product-card {
+    border-radius: 8px;
+    margin: 16px 0;
+    box-shadow: 0 1px 4px #b0b0b0;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.product-card > div {
+    margin-left: -20px;
+    transform: translateX(0px);
+    transition-duration: 200ms;
+}
+
+.product-card > img {
+    transition-duration: 200ms;
+    transform: scale(1);
+}
+
+.product-card:hover > div {
+    transform: translateX(10px);
+}
+
+.product-card:hover > img {
+    transform: scale(1.15);
+}
+
+.content-wrapper {
+    padding: 0 10px;
+}
+
+.card-image {
+    padding: 14px;
+    height: 8rem;
+    border-radius: 8px;
+    margin-right: 40px;
+    object-fit: contain;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.card-text-wrapper {
+    text-align: left;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: -8px;
+}
+
+nav {
+    text-align: left;
+}
+
+.stock{
+    margin-top: 7px;
+}
+
+.grid {
+    display: block;
+}
+
+.footer{
+    padding: 16px 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.form-container{
+    padding: 30px 20px;
+}
+
+.about-image-bg{
+    background: url("../assets/images/cover2.jpg") no-repeat; !important;
+}
+
+.contact-image-bg{
+    background: url("../assets/images/contact.png") no-repeat; !important;
+}
+
+.landing-image-bg{
+    background: url("../assets/images/cover1.jpg") no-repeat; !important;
+}
+.landing-image{
+    height: 50vh;
+    background-size: cover ;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 10px 10px 0 10px;
+	background-position: center;
+}
+
+
+
+.nav-logo{
+    height: 40px;
+}
+
+.contact-description{
+    padding: 20px 20px;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.product-wrapper{
+    padding: 20px;
+}
+
+.product-image{
+    width: 35%;
+}
+
+.product-header{
+    font-size: 2.6rem;
+}
+
+.product-description{
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.product-price{
+    text-align: left;
+    font-size: 2.2rem;
+    margin: 20px 0;
+}
+
+.product-in-stock{
+    font-size: 1.2rem
+}
+
+.about{
+    font-size: 1.2rem;
+    padding: 20px;
+    text-align: justify;
+}
+
+.flex-center{
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .flex-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-left: 20px;
+    }
+
+    .landing-image{
+        margin: 20px 20px 0 20px;
+	height: 65vh;
+    }
+
+    .grid {
+        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 48% 48%;
+    }
+
+    .brand-logo {
+        margin-left: 5px;
+    }
+
+    .root {
+        max-width: 1000px;
+    !important;
+        min-width: 1000px;
+    !important;
+    }
+
+    .card-image {
+        height: 10rem;
+        width: 10rem;
+    }
+}
+

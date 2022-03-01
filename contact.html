@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script defer src="./javascript/index.js"></script>
+    <title>TENTREE - CONTACT</title>
+</head>
+<body>
+<div class="root-wrapper">
+
+    <div class="root">
+        <nav class="teal darken-2">
+            <div class="nav-wrapper">
+                <a href="index.html" class="left flex-center">
+                    <img src="./assets/images/logo.png" class="nav-logo"/>
+                </a>
+                <a href="index.html" class="brand-logo">Tentree</a>
+                <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i
+                        class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="landing-image contact-image-bg"></div>
+
+        <div class="contact-description">
+            Business hours are Monday to Friday 9:00 AM to 5:00 PM PST, closed on weekends and Canadian holidays.
+
+
+Call our toll-free number: 1-833-520-1145
+        </div>
+
+        <div class="form-container">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="First name" id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="Last name" id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="johndoe@email.com" id="email" type="text" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Enter your message" id="message" type="text" class="validate">
+                        <label for="last_name">Message</label>
+                    </div>
+                </div>
+                <a class="waves-effect waves-light btn-large" style="width: 100%">SUBMIT</a>
+            </form>
+        </div>
+        <div class="footer grey darken-3 white-text">
+            <div>© 2021 Tentree, All rights reserved.</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
