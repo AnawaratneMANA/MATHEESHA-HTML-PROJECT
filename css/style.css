@@ -203,5 +203,9 @@ nav {
         height: 10rem;
         width: 10rem;
     }
+
+    .login-footer {
+        height: 100vh;
+    }
 }
 
